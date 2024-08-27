@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-cr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="area-texto">
+            <textarea id="texto" placeholder="Ingrese el texto aquí..."></textarea>
+        </div>
+        <div class="area-resultado">
+            <div id="resultado">
+                <img src="/assets/cifrado-datoss.png" alt="Ningún mensaje fue encontrado" class="imagen-placeholder">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="opciones">
+        <label>
+            <input  type="radio" name="accion" value="encriptar" checked> Encriptar
+        </label>
+        <label>
+            <input  type="radio" name="accion" value="desencriptar"> Desencriptar
+        </label>
+        <button class="boton_procesar" onclick="procesarTexto()">Procesar</button>
+    </div>
+
+    <p class="nota"> ⚠  Solo letras minúsculas y sin acentos</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
